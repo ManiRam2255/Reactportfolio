@@ -1,0 +1,125 @@
+#skills {
+  padding: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  color: #ddd; /* Default text color */
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff; /* Header color */
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.skillCard {
+  background: rgb(40, 40, 40); /* Darker background for better contrast */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: #ddd; /* Default text color */
+}
+
+.skillCardContent {
+  text-align: center;
+}
+
+.skillCardContent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  background: #555; /* Dark background for progress bar */
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 0;
+}
+
+.progressBar {
+  height: 100%;
+  border-radius: 1rem;
+  background: #4caf50; /* Default progress bar color */
+  transition: width 0.3s;
+}
+
+.proficiency {
+  display: block;
+  font-size: 1rem;
+  color: #fff; /* White color for text */
+  margin-top: 0.5rem;
+}
+
+.percentage {
+  display: block;
+  font-size: 0.9rem;
+  color: #fff; /* White color for percentage */
+  margin-top: 0.2rem;
+}
+
+.softSkills {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.softSkills h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.softSkills ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.softSkills li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  background: rgb(60, 60, 60);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 720px) {
+  .skillCardContent h2 {
+      font-size: 1.2rem;
+  }
+  .progress {
+      height: 1.25rem;
+  }
+  .proficiency {
+      font-size: 0.9rem;
+  }
+  .percentage {
+      font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillCardContent h2 {
+      font-size: 1rem;
+  }
+  .progress {
+      height: 1rem;
+  }
+  .proficiency {
+      font-size: 0.8rem;
+  }
+  .percentage {
+      font-size: 0.7rem;
+  }
+}

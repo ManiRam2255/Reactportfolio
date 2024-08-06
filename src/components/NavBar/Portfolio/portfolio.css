@@ -1,0 +1,25 @@
+#portfolio {
+    padding: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.project {
+    margin: 1.5rem 0;
+}
+
+.project h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #ddd;
+}

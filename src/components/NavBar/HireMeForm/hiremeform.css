@@ -1,0 +1,125 @@
+/* Existing styles */
+
+.hireMeFormOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.hireMeFormContainer {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.closeBtn:hover {
+    background: #d62839;
+}
+
+.hireMeForm h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.hireMeForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.hireMeForm label {
+    margin-top: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.hireMeForm input,
+.hireMeForm textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.hireMeForm textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.hireMeForm button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #2a9d8f;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.hireMeForm button:hover {
+    background: #1f7a6e;
+}
+
+/* Media Query for Mobile Devices */
+/* Existing styles */
+
+/* Media Query for Mobile Devices with resolution 360x740 */
+@media (max-width: 360px), (max-height: 740px) {
+    .hireMeFormContainer {
+        width: 90%;
+        max-width: 320px; /* Reduced max-width for very small screens */
+        padding: 1rem;
+        transform: scale(0.85); /* Scale down the form to fit better */
+        transform-origin: center;
+    }
+
+    .closeBtn {
+        width: 1.75rem; /* Slightly smaller close button */
+        height: 1.75rem;
+        font-size: 1rem;
+    }
+
+    .hireMeForm input,
+    .hireMeForm textarea {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .hireMeForm button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
